@@ -12,10 +12,12 @@ def login_view(request):
             u = form.cleaned_data['username']
             p = form.cleaned_data['password']
             user = authenticate(username = u, password = p)
+            context={
+                'user_name'=u
+            }
+
             if user is not None:
-                if user.is_active:
-                    login(request, user)
-                    return HttpResponseRedirect('/')
+                return render(request, 'dummy.html',context)
             else:
                 print("The account has been disabled!")
         else:

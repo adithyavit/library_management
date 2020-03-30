@@ -8,7 +8,7 @@
             "name": "Python: Django",
             "type": "python",
             "request": "launch",
-            "program": "/Users/sravankumarmatta/Desktop/Desktop/library_management/LIBRARY_MANAGEMENT/manage.py",
+            "program": "C:/Users/chred/Desktop/library_management/LIBRARY_MANAGEMENT/manage.py",
             "args": [
                 "runserver",
                 "--noreload"
